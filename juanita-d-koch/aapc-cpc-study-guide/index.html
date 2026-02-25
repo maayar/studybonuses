@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>AAPC CPC Study Guide - Bonus Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f9e7df;
+            color: #1a1a1a;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Top Bar ── */
+        .top-bar {
+            background: linear-gradient(135deg, #08294a 0%, #020c17 100%);
+            padding: 15px 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .top-bar h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #f9e7df;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* ── Hero Section ── */
+        .hero {
+            background: linear-gradient(180deg, #08294a 0%, #020c17 100%);
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                repeating-linear-gradient(
+                    45deg,
+                    rgba(255, 255, 255, 0.02) 0px,
+                    rgba(255, 255, 255, 0.02) 2px,
+                    transparent 2px,
+                    transparent 12px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    rgba(255, 255, 255, 0.015) 0px,
+                    rgba(255, 255, 255, 0.015) 2px,
+                    transparent 2px,
+                    transparent 16px
+                );
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #f9e7df;
+            color: #1a1a1a;
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .tagline {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ── Bonus Grid Section ── */
+        .bonus-grid-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 30px;
+        }
+
+        .bonus-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(8,41,74,0.1);
+            border: 1px solid #b3c7da;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #f9e7df;
+        }
+
+        .section-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #f9e7df 0%, #d2c3bc 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+        }
+
+        .section-icon svg {
+            width: 26px;
+            height: 26px;
+            stroke: #1a1a1a;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .section-header h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #08294a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .bonus-item {
+            background: linear-gradient(135deg, #c5d4e3 0%, #f9e7df 100%);
+            padding: 14px 16px;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #08294a;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            border: 1px solid #b3c7da;
+            transition: all 0.2s ease;
+        }
+
+        .bonus-item:hover {
+            transform: translateX(5px);
+            border-color: #f9e7df;
+        }
+
+        .bonus-item::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #f9e7df;
+            border-radius: 2px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        /* ── Review Section ── */
+        .review-section {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 30px 50px;
+            text-align: center;
+        }
+
+        .review-section h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #08294a;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .review-section > p {
+            font-size: 16px;
+            color: #051a30;
+            margin-bottom: 25px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .quote-box {
+            background: #fefcfb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #f9e7df;
+            text-align: left;
+        }
+
+        .quote-box p {
+            font-size: 15px;
+            color: #938883;
+            font-style: italic;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .review-btn {
+            display: inline-block;
+            padding: 16px 45px;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Oswald', sans-serif;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f9e7df 0%, #d2c3bc 100%);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .review-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ── Download Section ── */
+        .download-section {
+            background: #f1dfd8;
+            padding: 50px 30px;
+        }
+
+        .download-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .download-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .download-header h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: #08294a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .download-header h3 svg {
+            width: 28px;
+            height: 28px;
+            stroke: #08294a;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .download-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 22px;
+            background: linear-gradient(135deg, #f9e7df 0%, #d2c3bc 100%);
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .download-btn .pdf-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .download-btn .pdf-badge svg {
+            width: 22px;
+            height: 22px;
+            fill: #1a1a1a;
+        }
+
+        .download-btn .btn-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .download-btn .btn-name {
+            display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .download-btn .btn-label {
+            display: block;
+            font-size: 11px;
+            font-weight: 400;
+            opacity: 0.75;
+            margin-top: 2px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            background: #08294a;
+            padding: 25px 30px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* ── Responsive -- Tablet ── */
+        @media (max-width: 900px) {
+            .bonus-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .bonus-grid-section {
+                padding: 40px 20px;
+            }
+
+            .review-section {
+                padding: 0 20px 40px;
+            }
+
+            .download-section {
+                padding: 40px 20px;
+            }
+        }
+
+        /* ── Responsive -- Mobile ── */
+        @media (max-width: 600px) {
+            .top-bar {
+                padding: 12px 20px;
+            }
+
+            .top-bar h1 {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero .tagline {
+                font-size: 15px;
+            }
+
+            .bonus-grid-section {
+                padding: 30px 15px;
+            }
+
+            .bonus-card {
+                padding: 25px 20px;
+            }
+
+            .section-header h3 {
+                font-size: 18px;
+            }
+
+            .review-section {
+                padding: 0 15px 30px;
+            }
+
+            .review-section h3 {
+                font-size: 22px;
+            }
+
+            .review-btn {
+                padding: 14px 35px;
+                font-size: 14px;
+            }
+
+            .download-section {
+                padding: 30px 15px;
+            }
+
+            .download-header h3 {
+                font-size: 22px;
+            }
+
+            .download-btn {
+                padding: 14px 18px;
+                font-size: 14px;
+            }
+
+            .footer {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <h1>Juanita D. Koch</h1>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">Exclusive Bonus</span>
+                <h2>AAPC CPC Study Guide</h2>
+                <p class="tagline">Your exclusive bonus resources &mdash; curated to complement your learning journey</p>
+            </div>
+        </div>
+
+        <!-- Bonus Grid -->
+        
+        <div class="bonus-grid-section">
+            <div class="bonus-card">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"></path>
+                            <rect x="2" y="7" width="20" height="5" rx="1"></rect>
+                            <line x1="12" y1="22" x2="12" y2="7"></line>
+                            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                        </svg>
+                    </div>
+                    <h3>What You Get (1 PDF)</h3>
+                </div>
+
+                <div class="bonus-grid">
+                    
+                    <div class="bonus-item">Certified Professional Coder Exam Prep with 10 Full-Length Practice Tests, 950+ Practice Questions, Complete CPT & ICD-10-CM Coverage, and Expert Explanations for First Attempt Pass Success Flashcard Set (10 Cards)</div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Review Section -->
+        
+        <div class="review-section">
+            <h3>Enjoying This Book? Share Your Experience</h3>
+            <p>Your honest review helps other readers discover this resource and means the world to us. As a thank you for your support, we hope these bonus materials enhance your journey.</p>
+
+            
+
+            <a href="https://www.amazon.com/review/create-review?asin=B0GNKS17YJ" target="_blank" rel="noopener noreferrer" class="review-btn">
+                Leave a Quick Review
+            </a>
+        </div>
+        
+
+        <!-- Download Section -->
+        
+        <div class="download-section">
+            <div class="download-inner">
+                <div class="download-header">
+                    <h3>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Your Bonuses
+                    </h3>
+                </div>
+
+                <div class="download-grid">
+                    
+                    <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/1_certified-professional-coder-exam-prep-with-10-full-length-practice-tests-950-practice-questions-complete-cpt-icd-10-cm-coverage-and-expert-explanations-for-first-attempt-pass-success_10_flashcards.pdf" class="download-btn" download>
+                        <div class="pdf-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+                                <path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <div class="btn-text">
+                            <span class="btn-name">Certified Professional Coder Exam Prep with 10 Full-Length Practice Tests, 950+ Practice Questions, Complete CPT & ICD-10-CM Coverage, and Expert Explanations for First Attempt Pass Success Flashcard Set (10 Cards)</span>
+                            <span class="btn-label">Click to download PDF</span>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; Juanita D. Koch &middot; All rights reserved.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
