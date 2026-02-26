@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>frvfv - Bonus Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f1f1f0;
+            color: #1a1a1a;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Heading ── */
+        .heading {
+            text-align: center;
+            padding: 52px 24px 0;
+        }
+
+        .heading h1 {
+            font-size: 38px;
+            font-weight: 800;
+            color: #b8a994;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        /* ── Two-column layout ── */
+        .content {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 48px 40px 56px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 56px;
+            align-items: start;
+        }
+
+        /* ── Left column ── */
+        .description {
+            font-size: 16px;
+            color: #9e917f;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        /* Stars + Review */
+        .review-block {
+            margin-bottom: 40px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 12px;
+        }
+
+        .stars svg {
+            width: 22px;
+            height: 22px;
+            fill: #000000;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #b8a994;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        /* Bonus blocks */
+        .bonus-block {
+            margin-bottom: 32px;
+        }
+
+        .bonus-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .bonus-copy {
+            font-size: 15px;
+            color: #9e917f;
+            line-height: 1.75;
+            margin-bottom: 12px;
+        }
+
+        /* ── Right column — Image ── */
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .cover-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 4px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding: 32px 24px;
+            margin-top: auto;
+            border-top: 1px solid #f0ece7;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: #9e917f;
+        }
+
+        /* ── Tablet ── */
+        @media (max-width: 900px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+                gap: 36px;
+                padding: 36px 24px 48px;
+            }
+            .heading h1 { font-size: 30px; }
+        }
+
+        /* ── Mobile ── */
+        @media (max-width: 680px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 28px 20px 40px;
+            }
+            .right { order: -1; }
+            .cover-image { max-width: 260px; margin: 0 auto; }
+            .heading { padding: 36px 20px 0; }
+            .heading h1 { font-size: 24px; }
+            .description { font-size: 15px; }
+            .btn { padding: 11px 26px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+
+        <div class="heading">
+            <h1>frvfv</h1>
+        </div>
+
+        <div class="content">
+
+            <div class="left">
+
+                <p class="description">Thank you for your support! You'll receive exclusive flashcards to enhance your learning experience.</p>
+
+                
+
+                
+                <div class="bonus-block">
+                    <p class="bonus-copy"><built-in method copy of dict object at 0x000002D92DBEBF00></p>
+                    <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/1_certified-professional-coder-exam-prep-with-10-full-length-practice-tests-950-practice-questions-complete-cpt-icd-10-cm-coverage-and-expert-explanations-for-first-attempt-pass-success_10_flashcards.pdf" class="btn" download>Download Flashcards</a>
+                </div>
+                
+
+            </div>
+
+            <div class="right">
+                
+                <img src="../cover.jpg" alt="frvfv" class="cover-image">
+                
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>&copy; Juanita D. Koch</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
