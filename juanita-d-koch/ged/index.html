@@ -11,7 +11,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #ffffff;
+            background: #f0f1f0;
             color: #1a1a1a;
             line-height: 1.7;
             min-height: 100vh;
@@ -26,183 +26,134 @@
         /* ── Heading ── */
         .heading {
             text-align: center;
-            padding: 56px 24px 0;
+            padding: 52px 24px 0;
         }
 
         .heading h1 {
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 800;
-            color: #111;
-            letter-spacing: -0.8px;
-            line-height: 1.15;
-            max-width: 700px;
-            margin: 0 auto;
+            color: #04213f;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
         }
 
-        /* ── Two-column content ── */
+        /* ── Two-column layout ── */
         .content {
-            max-width: 1080px;
+            max-width: 1040px;
             margin: 0 auto;
-            padding: 52px 40px 40px;
+            padding: 48px 40px 56px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 56px;
             align-items: start;
         }
 
         /* ── Left column ── */
         .description {
-            font-size: 17px;
-            color: #444;
-            line-height: 1.85;
-            margin-bottom: 36px;
+            font-size: 16px;
+            color: #021325;
+            line-height: 1.8;
+            margin-bottom: 32px;
         }
 
-        /* ── Stars + Review ── */
+        /* Stars + Review */
         .review-block {
-            margin-bottom: 44px;
+            margin-bottom: 40px;
         }
 
         .stars {
             display: flex;
-            gap: 3px;
-            margin-bottom: 14px;
+            gap: 2px;
+            margin-bottom: 12px;
         }
 
         .stars svg {
-            width: 24px;
-            height: 24px;
-            fill: #FACC15;
+            width: 22px;
+            height: 22px;
+            fill: #ab7e66;
         }
 
         .btn {
             display: inline-block;
-            padding: 13px 34px;
-            background: #111;
-            color: #fff;
+            padding: 12px 32px;
+            background: #04213f;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 50px;
             font-size: 14px;
             font-weight: 600;
-            letter-spacing: 0.2px;
-            transition: background 0.2s, transform 0.15s;
+            transition: opacity 0.2s;
         }
 
         .btn:hover {
-            background: #333;
-            transform: translateY(-1px);
+            opacity: 0.85;
         }
 
-        /* ── Bonus sections ── */
+        /* Bonus blocks */
         .bonus-block {
-            margin-bottom: 36px;
+            margin-bottom: 32px;
         }
 
         .bonus-block:last-child {
             margin-bottom: 0;
         }
 
-        .bonus-text {
-            font-size: 16px;
-            color: #444;
-            line-height: 1.8;
-            margin-bottom: 14px;
+        .bonus-copy {
+            font-size: 15px;
+            color: #021325;
+            line-height: 1.75;
+            margin-bottom: 12px;
         }
 
-        .bonus-label {
-            font-weight: 700;
-            color: #111;
-        }
-
-        /* ── Right column ── */
+        /* ── Right column — Image ── */
         .right {
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            position: sticky;
-            top: 40px;
         }
 
         .cover-image {
             width: 100%;
-            max-width: 440px;
-            border-radius: 6px;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-        }
-
-        .cover-placeholder {
-            width: 100%;
-            max-width: 440px;
-            aspect-ratio: 0.65;
-            background: #f5f5f5;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ccc;
-            font-size: 18px;
-            font-weight: 600;
+            max-width: 400px;
+            border-radius: 4px;
         }
 
         /* ── Footer ── */
         .footer {
             text-align: center;
-            padding: 36px 24px;
+            padding: 32px 24px;
             margin-top: auto;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #b0c3d8;
         }
 
         .footer p {
             font-size: 13px;
-            color: #999;
+            color: #021325;
         }
 
-        /* ── Responsive — Tablet ── */
+        /* ── Tablet ── */
         @media (max-width: 900px) {
             .content {
-                gap: 40px;
-                padding: 40px 24px;
+                grid-template-columns: 1fr 1fr;
+                gap: 36px;
+                padding: 36px 24px 48px;
             }
-
-            .heading h1 {
-                font-size: 32px;
-            }
+            .heading h1 { font-size: 30px; }
         }
 
-        /* ── Responsive — Mobile ── */
+        /* ── Mobile ── */
         @media (max-width: 680px) {
             .content {
                 grid-template-columns: 1fr;
-                gap: 32px;
-                padding: 32px 20px;
+                gap: 28px;
+                padding: 28px 20px 40px;
             }
-
-            .right {
-                order: -1;
-                position: static;
-            }
-
-            .cover-image, .cover-placeholder {
-                max-width: 280px;
-                margin: 0 auto;
-            }
-
-            .heading {
-                padding: 36px 20px 0;
-            }
-
-            .heading h1 {
-                font-size: 26px;
-            }
-
-            .description {
-                font-size: 15px;
-            }
-
-            .btn {
-                padding: 12px 28px;
-                font-size: 13px;
-            }
+            .right { order: -1; }
+            .cover-image { max-width: 260px; margin: 0 auto; }
+            .heading { padding: 36px 20px 0; }
+            .heading h1 { font-size: 24px; }
+            .description { font-size: 15px; }
+            .btn { padding: 11px 26px; font-size: 13px; }
         }
     </style>
 </head>
@@ -210,34 +161,27 @@
 
     <div class="page">
 
-        <!-- Heading -->
         <div class="heading">
             <h1>GED</h1>
         </div>
 
-        <!-- Two-column content -->
         <div class="content">
 
-            <!-- Left column -->
             <div class="left">
 
-                <!-- Description -->
-                <p class="description">Thank you for choosing GED. As our way of saying thanks, we’ve put together an exclusive bonus resource to help you get the most out of your Certified Professional Coder Exam Prep with 10 Full-Length Practice Tests, 950+ Practice Questions, Complete CPT & ICD-10-CM Coverage, and Expert Explanations for First Attempt Pass Success preparation.</p>
+                <p class="description">Thank you for your purchase! You'll receive 10 essential flashcards to boost your study efforts.</p>
 
-                <!-- Stars + Review -->
                 
 
-                <!-- Bonus downloads -->
                 
                 <div class="bonus-block">
-                    <p class="bonus-text"><built-in method copy of dict object at 0x00000195C9DEEAC0></p>
+                    <p class="bonus-copy"><built-in method copy of dict object at 0x0000019873DFC1C0></p>
                     <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/1_certified-professional-coder-exam-prep-with-10-full-length-practice-tests-950-practice-questions-complete-cpt-icd-10-cm-coverage-and-expert-explanations-for-first-attempt-pass-success_10_flashcards.pdf" class="btn" download>Download Flashcards</a>
                 </div>
                 
 
             </div>
 
-            <!-- Right column — Cover Image -->
             <div class="right">
                 
                 <img src="../cover.jpg" alt="GED" class="cover-image">
@@ -246,7 +190,6 @@
 
         </div>
 
-        <!-- Footer -->
         <div class="footer">
             <p>&copy; Juanita D. Koch</p>
         </div>
