@@ -8,13 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --accent:       #b8a994;
-    --accent-light: #ffe4bf;
-    --dark:         #2a2621;
-    --darker:       #171613;
-    --mid:          #302c27;
-    --sky:          #ffe9cc;
-    --cream:        #fff9f2;
+    --accent:       #0072b1;
+    --accent-light: #4cbfff;
+    --dark:         #0c1f2a;
+    --darker:       #071117;
+    --mid:          #102530;
+    --sky:          #7fd1ff;
+    --cream:        #ddf3ff;
     --white:        #ffffff;
   }
 
@@ -22,18 +22,18 @@
 
   html, body {
     font-family: 'DM Sans', sans-serif;
-    background: #171613;
-    background-color: #171613;
+    background: #071117;
+    background-color: #071117;
     color: var(--white);
     overflow-x: hidden;
   }
 
   main {
-    background: #171613;
+    background: #071117;
   }
 
   header {
-    background: linear-gradient(160deg, #2a2621 0%, #2a2621 50%, #171613 100%);
+    background: linear-gradient(160deg, #0c1f2a 0%, #0c1f2a 50%, #071117 100%);
     position: relative;
     overflow: hidden;
     padding: 56px 24px 72px;
@@ -44,7 +44,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% -10%, rgba(184,169,148,0.18) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 50% -10%, rgba(0,114,177,0.18) 0%, transparent 65%);
     pointer-events: none;
   }
 
@@ -53,8 +53,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(184,169,148,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(184,169,148,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(0,114,177,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,114,177,0.04) 1px, transparent 1px);
     background-size: 44px 44px;
     pointer-events: none;
   }
@@ -63,8 +63,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(184,169,148,0.1);
-    border: 1px solid rgba(184,169,148,0.3);
+    background: rgba(0,114,177,0.1);
+    border: 1px solid rgba(0,114,177,0.3);
     color: var(--sky);
     font-size: 11px;
     font-weight: 600;
@@ -153,7 +153,7 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--cream);
-    background: rgba(184,169,148,0.08);
+    background: rgba(0,114,177,0.08);
     border-left: 3px solid var(--accent);
     padding: 14px 18px;
     border-radius: 0 10px 10px 0;
@@ -194,7 +194,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 8px 28px rgba(184,169,148,0.38);
+    box-shadow: 0 8px 28px rgba(0,114,177,0.38);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
@@ -208,7 +208,7 @@
     transition: left 0.4s ease;
   }
   .btn-review:hover::before { left: 160%; }
-  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(184,169,148,0.5); }
+  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(0,114,177,0.5); }
 
   .review-sub {
     font-size: 11px;
@@ -259,8 +259,8 @@
     transition: background 0.2s, border-color 0.2s;
   }
   .bonus-item:hover {
-    background: rgba(184,169,148,0.07);
-    border-color: rgba(184,169,148,0.25);
+    background: rgba(0,114,177,0.07);
+    border-color: rgba(0,114,177,0.25);
   }
 
   .bonus-dot {
@@ -268,7 +268,7 @@
     border-radius: 50%;
     background: var(--accent);
     flex-shrink: 0;
-    box-shadow: 0 0 8px rgba(184,169,148,0.7);
+    box-shadow: 0 0 8px rgba(0,114,177,0.7);
   }
 
   .bonus-item-text {
@@ -284,8 +284,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--sky);
-    background: rgba(184,169,148,0.1);
-    border: 1px solid rgba(184,169,148,0.22);
+    background: rgba(0,114,177,0.1);
+    border: 1px solid rgba(0,114,177,0.22);
     padding: 3px 10px;
     border-radius: 100px;
     white-space: nowrap;
@@ -295,7 +295,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #b8a994 0%, #9c8d79 100%);
+    background: linear-gradient(135deg, #0072b1 0%, #006096 100%);
     color: #fff;
     font-size: 15px;
     font-weight: 800;
@@ -305,14 +305,14 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 10px 36px rgba(184,169,148,0.35);
+    box-shadow: 0 10px 36px rgba(0,114,177,0.35);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
     animation: fadeUp 0.6s 0.77s ease forwards;
   }
   .btn-download svg { width: 17px; height: 17px; }
-  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(184,169,148,0.5); }
+  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(0,114,177,0.5); }
 
   .download-note {
     font-size: 11px;
@@ -337,8 +337,8 @@
     overflow: hidden;
     box-shadow:
       0 40px 90px rgba(0,0,0,0.55),
-      0 0 0 1px rgba(184,169,148,0.1),
-      0 0 60px rgba(184,169,148,0.07);
+      0 0 0 1px rgba(0,114,177,0.1),
+      0 0 60px rgba(0,114,177,0.07);
   }
 
   .book-card img {
@@ -402,7 +402,7 @@
 <header>
   <div class="header-badge">YOUR EXCLUSIVE BONUSES ARE READY</div>
   <h1>You Made It.<br><span>Now Let’s Make Sure You Pass.</span></h1>
-  <p class="header-sub">You've put in the hard work to prepare. Let's build on that foundation together.</p>
+  <p class="header-sub">You’ve put in the hard work. Let’s build on that foundation together.</p>
 </header>
 
 <main class="main-layout">
@@ -411,11 +411,11 @@
 
     <p class="section-label">A Message From Us To You</p>
 
-    <h2>Studying for the CMA can feel overwhelming and isolating<br><em>Imagine the relief of walking into that exam with confidence</em></h2>
+    <h2>Studying for the CMA can feel overwhelming and isolating.<br><em>Imagine the relief of passing and the doors it opens.</em></h2>
 
-    <p class="copy-text">The journey to becoming certified can be filled with anxiety and self-doubt. You may find yourself grappling with complex topics while juggling work and personal commitments. But with the right tools, you can turn that uncertainty into assurance and clarity.</p>
+    <p class="copy-text">Many candidates struggle with the vast amount of material and the pressure to perform. It can be easy to feel lost or discouraged along the way. But remember, every step you take brings you closer to your goal.</p>
 
-    <div class="highlight-text">"Creating this guide was my way of helping others avoid the struggles I faced."</div>
+    <div class="highlight-text">"I created this guide to help others feel confident and prepared for the CMA exam."</div>
 
     
 
@@ -427,7 +427,7 @@
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/1_certified-professional-coder-exam-prep-with-10-full-length-practice-tests-950-practice-questions-complete-cpt-icd-10-cm-coverage-and-expert-explanations-for-first-attempt-pass-success_10_flashcards.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">10 Flashcards. These flashcards can ease your anxiety by reinforcing key concepts in a manageable way.</span>
+        <span class="bonus-item-text">10 Flashcards. These will help ease your anxiety about memorization and quick recall.</span>
         <span class="bonus-tag">Free</span>
       </a>
       
