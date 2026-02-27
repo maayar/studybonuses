@@ -8,13 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --accent:       #4F8EF7;
-    --accent-light: #7EB3FF;
-    --dark:         #0D1B2A;
-    --darker:       #070F18;
-    --mid:          #111F30;
-    --sky:          #A8CFFF;
-    --cream:        #E8F4FF;
+    --accent:       #0072b8;
+    --accent-light: #4cbbff;
+    --dark:         #0c1e2a;
+    --darker:       #071117;
+    --mid:          #102430;
+    --sky:          #7fceff;
+    --cream:        #ddf2ff;
     --white:        #ffffff;
   }
 
@@ -22,18 +22,18 @@
 
   html, body {
     font-family: 'DM Sans', sans-serif;
-    background: #070F18;
-    background-color: #070F18;
+    background: #071117;
+    background-color: #071117;
     color: var(--white);
     overflow-x: hidden;
   }
 
   main {
-    background: #070F18;
+    background: #071117;
   }
 
   header {
-    background: linear-gradient(160deg, #0D1B2A 0%, #0D1B2A 50%, #070F18 100%);
+    background: linear-gradient(160deg, #0c1e2a 0%, #0c1e2a 50%, #071117 100%);
     position: relative;
     overflow: hidden;
     padding: 56px 24px 72px;
@@ -44,7 +44,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% -10%, rgba(79,142,247,0.18) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 50% -10%, rgba(0,114,184,0.18) 0%, transparent 65%);
     pointer-events: none;
   }
 
@@ -53,8 +53,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(79,142,247,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(79,142,247,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(0,114,184,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,114,184,0.04) 1px, transparent 1px);
     background-size: 44px 44px;
     pointer-events: none;
   }
@@ -63,8 +63,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(79,142,247,0.1);
-    border: 1px solid rgba(79,142,247,0.3);
+    background: rgba(0,114,184,0.1);
+    border: 1px solid rgba(0,114,184,0.3);
     color: var(--sky);
     font-size: 11px;
     font-weight: 600;
@@ -153,7 +153,7 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--cream);
-    background: rgba(79,142,247,0.08);
+    background: rgba(0,114,184,0.08);
     border-left: 3px solid var(--accent);
     padding: 14px 18px;
     border-radius: 0 10px 10px 0;
@@ -194,7 +194,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 8px 28px rgba(79,142,247,0.38);
+    box-shadow: 0 8px 28px rgba(0,114,184,0.38);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
@@ -208,7 +208,7 @@
     transition: left 0.4s ease;
   }
   .btn-review:hover::before { left: 160%; }
-  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(79,142,247,0.5); }
+  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(0,114,184,0.5); }
 
   .review-sub {
     font-size: 11px;
@@ -259,8 +259,8 @@
     transition: background 0.2s, border-color 0.2s;
   }
   .bonus-item:hover {
-    background: rgba(79,142,247,0.07);
-    border-color: rgba(79,142,247,0.25);
+    background: rgba(0,114,184,0.07);
+    border-color: rgba(0,114,184,0.25);
   }
 
   .bonus-dot {
@@ -268,7 +268,7 @@
     border-radius: 50%;
     background: var(--accent);
     flex-shrink: 0;
-    box-shadow: 0 0 8px rgba(79,142,247,0.7);
+    box-shadow: 0 0 8px rgba(0,114,184,0.7);
   }
 
   .bonus-item-text {
@@ -284,8 +284,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--sky);
-    background: rgba(79,142,247,0.1);
-    border: 1px solid rgba(79,142,247,0.22);
+    background: rgba(0,114,184,0.1);
+    border: 1px solid rgba(0,114,184,0.22);
     padding: 3px 10px;
     border-radius: 100px;
     white-space: nowrap;
@@ -295,7 +295,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #4F8EF7 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #0072b8 0%, #00609c 100%);
     color: #fff;
     font-size: 15px;
     font-weight: 800;
@@ -305,14 +305,14 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 10px 36px rgba(79,142,247,0.35);
+    box-shadow: 0 10px 36px rgba(0,114,184,0.35);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
     animation: fadeUp 0.6s 0.77s ease forwards;
   }
   .btn-download svg { width: 17px; height: 17px; }
-  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(79,142,247,0.5); }
+  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(0,114,184,0.5); }
 
   .download-note {
     font-size: 11px;
@@ -337,7 +337,7 @@
     height: 80%;
     top: 10%;
     left: 5%;
-    background: radial-gradient(ellipse at 50% 50%, rgba(79,142,247,0.25) 0%, rgba(79,142,247,0.08) 40%, transparent 70%);
+    background: radial-gradient(ellipse at 50% 50%, rgba(0,114,184,0.25) 0%, rgba(0,114,184,0.08) 40%, transparent 70%);
     filter: blur(30px);
     pointer-events: none;
     z-index: 0;
@@ -412,8 +412,8 @@
 
 <header>
   <div class="header-badge">YOUR EXCLUSIVE BONUSES ARE READY</div>
-  <h1>You Made It.<br><span>Now Let's Cultivate Joy Together.</span></h1>
-  <p class="header-sub">You've taken a big step in your journey. Let's nurture that growth with some helpful resources.</p>
+  <h1>You Made It.<br><span>Now Let’s Cultivate Joy Together.</span></h1>
+  <p class="header-sub">You’ve put in the effort to explore the joys of farming. Let’s nurture that passion further.</p>
 </header>
 
 <main class="main-layout">
@@ -422,11 +422,11 @@
 
     <p class="section-label">A Message From Us To You</p>
 
-    <h2>I understand the struggle to connect with your child and foster their love for learning.<br><em>Imagine the joy of watching your little one thrive and discover new things every day.</em></h2>
+    <h2>Farming can feel overwhelming and isolating.<br><em>Imagine feeling confident and connected to your growing journey.</em></h2>
 
-    <p class="copy-text">Parenting can often feel overwhelming, especially when you see your child struggling with concepts that should be fun. The fear of not being able to engage them or inspire their curiosity can weigh heavily on your heart. But there is hope, and with the right tools, you can create a joyful learning environment.</p>
+    <p class="copy-text">You might be facing uncertainty with what to plant, when to harvest, or how to deal with pests. The fear of failing or not knowing where to start can be daunting. Yet, there is a community waiting to support you, and together we can find the joy in every step of this journey.</p>
 
-    <div class="highlight-text">"I felt lost and worried about how to support my child's learning. Now, I see their excitement and growth every day."</div>
+    <div class="highlight-text">"I wrote 'Happy Farm' to share my love for gardening and to help others find their own green thumb."</div>
 
     
 
@@ -438,7 +438,7 @@
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/1_certified-professional-coder-exam-prep-with-10-full-length-practice-tests-950-practice-questions-complete-cpt-icd-10-cm-coverage-and-expert-explanations-for-first-attempt-pass-success_10_flashcards.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">10 Flashcards. These flashcards can spark excitement in learning and ease the fear of struggling with new concepts.</span>
+        <span class="bonus-item-text">10 Flashcards. These flashcards will help you remember key concepts and ease your worries about what to do next.</span>
         <span class="bonus-tag">Free</span>
       </a>
       
@@ -458,6 +458,8 @@
 
   <div class="right-col">
     <div class="book-card">
+      
+      <img src="../cover.png" alt="Happy Farm" />
       
     </div>
   </div>
