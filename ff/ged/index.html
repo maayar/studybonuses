@@ -8,13 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --accent:       #ff6f20;
-    --accent-light: #ff9a62;
-    --dark:         #2a170c;
-    --darker:       #170d07;
-    --mid:          #301c10;
-    --sky:          #ffb78f;
-    --cream:        #ffece2;
+    --accent:       #ff6f61;
+    --accent-light: #ff9a90;
+    --dark:         #2a1210;
+    --darker:       #170a09;
+    --mid:          #301715;
+    --sky:          #ffb7b0;
+    --cream:        #ffecea;
     --white:        #ffffff;
   }
 
@@ -22,18 +22,18 @@
 
   html, body {
     font-family: 'DM Sans', sans-serif;
-    background: #170d07;
-    background-color: #170d07;
+    background: #170a09;
+    background-color: #170a09;
     color: var(--white);
     overflow-x: hidden;
   }
 
   main {
-    background: #170d07;
+    background: #170a09;
   }
 
   header {
-    background: linear-gradient(160deg, #2a170c 0%, #2a170c 50%, #170d07 100%);
+    background: linear-gradient(160deg, #2a1210 0%, #2a1210 50%, #170a09 100%);
     position: relative;
     overflow: hidden;
     padding: 56px 24px 72px;
@@ -44,7 +44,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% -10%, rgba(255,111,32,0.18) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 50% -10%, rgba(255,111,97,0.18) 0%, transparent 65%);
     pointer-events: none;
   }
 
@@ -53,8 +53,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(255,111,32,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,111,32,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(255,111,97,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,111,97,0.04) 1px, transparent 1px);
     background-size: 44px 44px;
     pointer-events: none;
   }
@@ -63,8 +63,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255,111,32,0.1);
-    border: 1px solid rgba(255,111,32,0.3);
+    background: rgba(255,111,97,0.1);
+    border: 1px solid rgba(255,111,97,0.3);
     color: var(--sky);
     font-size: 11px;
     font-weight: 600;
@@ -110,7 +110,7 @@
     margin: 0 auto;
     padding: 64px 40px 80px;
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 480px;
     gap: 72px;
     align-items: center;
   }
@@ -153,7 +153,7 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--cream);
-    background: rgba(255,111,32,0.08);
+    background: rgba(255,111,97,0.08);
     border-left: 3px solid var(--accent);
     padding: 14px 18px;
     border-radius: 0 10px 10px 0;
@@ -194,7 +194,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 8px 28px rgba(255,111,32,0.38);
+    box-shadow: 0 8px 28px rgba(255,111,97,0.38);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
@@ -208,7 +208,7 @@
     transition: left 0.4s ease;
   }
   .btn-review:hover::before { left: 160%; }
-  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(255,111,32,0.5); }
+  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(255,111,97,0.5); }
 
   .review-sub {
     font-size: 11px;
@@ -259,8 +259,8 @@
     transition: background 0.2s, border-color 0.2s;
   }
   .bonus-item:hover {
-    background: rgba(255,111,32,0.07);
-    border-color: rgba(255,111,32,0.25);
+    background: rgba(255,111,97,0.07);
+    border-color: rgba(255,111,97,0.25);
   }
 
   .bonus-dot {
@@ -268,7 +268,7 @@
     border-radius: 50%;
     background: var(--accent);
     flex-shrink: 0;
-    box-shadow: 0 0 8px rgba(255,111,32,0.7);
+    box-shadow: 0 0 8px rgba(255,111,97,0.7);
   }
 
   .bonus-item-text {
@@ -284,8 +284,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--sky);
-    background: rgba(255,111,32,0.1);
-    border: 1px solid rgba(255,111,32,0.22);
+    background: rgba(255,111,97,0.1);
+    border: 1px solid rgba(255,111,97,0.22);
     padding: 3px 10px;
     border-radius: 100px;
     white-space: nowrap;
@@ -295,7 +295,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #ff6f20 0%, #d84c00 100%);
+    background: linear-gradient(135deg, #ff6f61 0%, #d84b3e 100%);
     color: #fff;
     font-size: 15px;
     font-weight: 800;
@@ -305,14 +305,14 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 10px 36px rgba(255,111,32,0.35);
+    box-shadow: 0 10px 36px rgba(255,111,97,0.35);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
     animation: fadeUp 0.6s 0.77s ease forwards;
   }
   .btn-download svg { width: 17px; height: 17px; }
-  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(255,111,32,0.5); }
+  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(255,111,97,0.5); }
 
   .download-note {
     font-size: 11px;
@@ -325,26 +325,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     opacity: 0;
     animation: fadeUp 0.9s 0.45s ease forwards;
   }
 
+  .right-col::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    background: radial-gradient(ellipse at 50% 50%, rgba(255,111,97,0.25) 0%, rgba(255,111,97,0.08) 40%, transparent 70%);
+    filter: blur(30px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
   .book-card {
     position: relative;
+    z-index: 1;
     width: 100%;
-    max-width: 380px;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow:
-      0 40px 90px rgba(0,0,0,0.55),
-      0 0 0 1px rgba(255,111,32,0.1),
-      0 0 60px rgba(255,111,32,0.07);
+    max-width: 480px;
   }
 
   .book-card img {
     width: 100%;
     display: block;
-    border-radius: 24px;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
   }
 
   footer {
@@ -356,13 +365,13 @@
   }
 
   @media (max-width: 1024px) {
-    .main-layout { grid-template-columns: 1fr 320px; gap: 48px; padding: 52px 32px 70px; }
+    .main-layout { grid-template-columns: 1fr 380px; gap: 48px; padding: 52px 32px 70px; }
   }
   @media (max-width: 780px) {
     header { padding: 44px 20px 56px; }
     .main-layout { grid-template-columns: 1fr; gap: 36px; padding: 36px 20px 56px; }
     .right-col { order: -1; }
-    .book-card { max-width: 280px; margin: 0 auto; }
+    .book-card { max-width: 340px; margin: 0 auto; }
     .left-col h2 { font-size: 26px; }
     .btn-review, .btn-download { align-self: stretch; text-align: center; justify-content: center; width: 100%; }
     .highlight-text { font-size: 14px; }
@@ -378,13 +387,13 @@
     .bonus-item { padding: 11px 14px; gap: 10px; }
     .bonus-item-text { font-size: 13px; }
     .btn-review, .btn-download { font-size: 14px; padding: 13px 28px; }
-    .book-card { max-width: 220px; border-radius: 16px; }
+    .book-card { max-width: 260px; }
     footer { font-size: 11px; padding: 20px 16px; }
   }
   @media (max-width: 360px) {
     h1 { font-size: 24px; }
     .left-col h2 { font-size: 20px; }
-    .book-card { max-width: 190px; }
+    .book-card { max-width: 220px; }
   }
 
   @keyframes fadeDown {
@@ -401,8 +410,8 @@
 
 <header>
   <div class="header-badge">YOUR EXCLUSIVE BONUSES ARE READY</div>
-  <h1>You Did It.<br><span>Now Let’s Prepare for Success.</span></h1>
-  <p class="header-sub">You’ve put in the hard work. Let’s make sure you navigate the next steps with confidence.</p>
+  <h1>You Made It.<br><span>Now Let's Make Sure You Pass.</span></h1>
+  <p class="header-sub">You've worked hard to reach this point. Let's build on your success together.</p>
 </header>
 
 <main class="main-layout">
@@ -411,24 +420,24 @@
 
     <p class="section-label">A Message From Us To You</p>
 
-    <h2>Facing the GED can feel overwhelming and isolating.<br><em>Imagine the relief of passing and moving forward.</em></h2>
+    <h2>Preparing for the GED can feel overwhelming and isolating.<br><em>Imagine the relief and pride of holding your diploma.</em></h2>
 
-    <p class="copy-text">Studying for the GED often comes with anxiety about the unknown. You might be feeling uncertain about your readiness or worried about the questions you will face. Those feelings are valid, but with the right tools, you can transform that anxiety into confidence.</p>
+    <p class="copy-text">You may feel anxious about the material or unsure if you are ready. The fear of failure can weigh heavily on your mind, making it hard to focus. But remember, each step you take is a step toward a brighter future.</p>
 
-    <div class="highlight-text">"I remember feeling lost before my GED. These flashcards helped me focus on what truly mattered."</div>
+    <div class="highlight-text">"I remember feeling lost and unsure, but I found my way and you can too."</div>
 
     
-    <p class="copy-text">If this helped you, sharing takes just 60 seconds and can guide the next person who feels as you once did. Your experience can light the way for someone else.</p>
+    <p class="copy-text">If this helped you, sharing takes 60 seconds and helps the next person standing where you once stood.</p>
 
     <div class="stars-row">
       <span class="star">&#9733;</span><span class="star">&#9733;</span>
       <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
     </div>
 
-    <p class="stars-label">Your honest feedback can make a difference for the next reader.</p>
+    <p class="stars-label">Your honest thoughts can guide someone else.</p>
 
     <a href="https://www.amazon.com/review/create-review?asin=B0FPLSBWRW" target="_blank" rel="noopener noreferrer" class="btn-review">Share Your Honest Review</a>
-    <p class="review-sub">Your words can inspire someone else to take the leap.</p>
+    <p class="review-sub">Your experience can light the way for others.</p>
     
 
     <div class="col-divider"></div>
@@ -439,7 +448,7 @@
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/1_certified-professional-coder-exam-prep-with-10-full-length-practice-tests-950-practice-questions-complete-cpt-icd-10-cm-coverage-and-expert-explanations-for-first-attempt-pass-success_10_flashcards.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">10 Flashcards. These flashcards can ease your fears about studying, helping you feel more prepared.</span>
+        <span class="bonus-item-text">10 Flashcards. These will ease your anxiety and boost your confidence as you prepare.</span>
         <span class="bonus-tag">Free</span>
       </a>
       
