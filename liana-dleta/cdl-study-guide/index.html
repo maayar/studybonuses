@@ -8,13 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --accent:       #4F8EF7;
-    --accent-light: #7EB3FF;
-    --dark:         #0D1B2A;
-    --darker:       #070F18;
-    --mid:          #111F30;
-    --sky:          #A8CFFF;
-    --cream:        #E8F4FF;
+    --accent:       #ff6a13;
+    --accent-light: #ff9659;
+    --dark:         #2a170c;
+    --darker:       #170d07;
+    --mid:          #301c10;
+    --sky:          #ffb489;
+    --cream:        #ffebe0;
     --white:        #ffffff;
   }
 
@@ -22,18 +22,18 @@
 
   html, body {
     font-family: 'DM Sans', sans-serif;
-    background: #070F18;
-    background-color: #070F18;
+    background: #170d07;
+    background-color: #170d07;
     color: var(--white);
     overflow-x: hidden;
   }
 
   main {
-    background: #070F18;
+    background: #170d07;
   }
 
   header {
-    background: linear-gradient(160deg, #0D1B2A 0%, #0D1B2A 50%, #070F18 100%);
+    background: linear-gradient(160deg, #2a170c 0%, #2a170c 50%, #170d07 100%);
     position: relative;
     overflow: hidden;
     padding: 56px 24px 72px;
@@ -44,7 +44,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% -10%, rgba(79,142,247,0.18) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 50% -10%, rgba(255,106,19,0.18) 0%, transparent 65%);
     pointer-events: none;
   }
 
@@ -53,8 +53,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(79,142,247,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(79,142,247,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(255,106,19,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,106,19,0.04) 1px, transparent 1px);
     background-size: 44px 44px;
     pointer-events: none;
   }
@@ -63,8 +63,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(79,142,247,0.1);
-    border: 1px solid rgba(79,142,247,0.3);
+    background: rgba(255,106,19,0.1);
+    border: 1px solid rgba(255,106,19,0.3);
     color: var(--sky);
     font-size: 11px;
     font-weight: 600;
@@ -153,7 +153,7 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--cream);
-    background: rgba(79,142,247,0.08);
+    background: rgba(255,106,19,0.08);
     border-left: 3px solid var(--accent);
     padding: 14px 18px;
     border-radius: 0 10px 10px 0;
@@ -194,7 +194,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 8px 28px rgba(79,142,247,0.38);
+    box-shadow: 0 8px 28px rgba(255,106,19,0.38);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
@@ -208,7 +208,7 @@
     transition: left 0.4s ease;
   }
   .btn-review:hover::before { left: 160%; }
-  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(79,142,247,0.5); }
+  .btn-review:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(255,106,19,0.5); }
 
   .review-sub {
     font-size: 11px;
@@ -259,8 +259,8 @@
     transition: background 0.2s, border-color 0.2s;
   }
   .bonus-item:hover {
-    background: rgba(79,142,247,0.07);
-    border-color: rgba(79,142,247,0.25);
+    background: rgba(255,106,19,0.07);
+    border-color: rgba(255,106,19,0.25);
   }
 
   .bonus-dot {
@@ -268,7 +268,7 @@
     border-radius: 50%;
     background: var(--accent);
     flex-shrink: 0;
-    box-shadow: 0 0 8px rgba(79,142,247,0.7);
+    box-shadow: 0 0 8px rgba(255,106,19,0.7);
   }
 
   .bonus-item-text {
@@ -284,8 +284,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--sky);
-    background: rgba(79,142,247,0.1);
-    border: 1px solid rgba(79,142,247,0.22);
+    background: rgba(255,106,19,0.1);
+    border: 1px solid rgba(255,106,19,0.22);
     padding: 3px 10px;
     border-radius: 100px;
     white-space: nowrap;
@@ -295,7 +295,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #4F8EF7 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #ff6a13 0%, #d84f00 100%);
     color: #fff;
     font-size: 15px;
     font-weight: 800;
@@ -305,14 +305,14 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 10px 36px rgba(79,142,247,0.35);
+    box-shadow: 0 10px 36px rgba(255,106,19,0.35);
     align-self: flex-start;
     margin-bottom: 8px;
     opacity: 0;
     animation: fadeUp 0.6s 0.77s ease forwards;
   }
   .btn-download svg { width: 17px; height: 17px; }
-  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(79,142,247,0.5); }
+  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(255,106,19,0.5); }
 
   .download-note {
     font-size: 11px;
@@ -337,7 +337,7 @@
     height: 80%;
     top: 10%;
     left: 5%;
-    background: radial-gradient(ellipse at 50% 50%, rgba(79,142,247,0.25) 0%, rgba(79,142,247,0.08) 40%, transparent 70%);
+    background: radial-gradient(ellipse at 50% 50%, rgba(255,106,19,0.25) 0%, rgba(255,106,19,0.08) 40%, transparent 70%);
     filter: blur(30px);
     pointer-events: none;
     z-index: 0;
@@ -412,8 +412,8 @@
 
 <header>
   <div class="header-badge">YOUR EXCLUSIVE BONUSES ARE READY</div>
-  <h1>You Did It.<br><span>Now Let’s Make Sure You Pass.</span></h1>
-  <p class="header-sub">Your hard work deserves the best support. Let’s build your confidence together.</p>
+  <h1>You Made It.<br><span>Now Let's Make Sure You Pass.</span></h1>
+  <p class="header-sub">You've put in the hard work. Let's turn that effort into success.</p>
 </header>
 
 <main class="main-layout">
@@ -422,11 +422,11 @@
 
     <p class="section-label">A Message From Us To You</p>
 
-    <h2>Studying for your CDL can feel overwhelming<br><em>Imagine the relief of passing your test with ease</em></h2>
+    <h2>Studying for your CDL can feel overwhelming<br><em>Imagine the relief of passing your test with confidence</em></h2>
 
-    <p class="copy-text">The fear of failing your CDL test can weigh heavily on you. Hours spent studying might still leave you feeling unprepared and anxious. With the right resources at your fingertips, you can transform that anxiety into confidence and clarity.</p>
+    <p class="copy-text">It can be frustrating to sift through endless information while trying to prepare for your CDL. The pressure of deadlines and the fear of failure can weigh you down. But remember, you are not alone in this experience, and there are tools designed to guide you through.</p>
 
-    <div class="highlight-text">"I remember feeling lost when I studied for my CDL. These resources turned my fear into success."</div>
+    <div class="highlight-text">"I created this study guide to help others feel less anxious and more prepared for their CDL test."</div>
 
     
 
@@ -438,25 +438,25 @@
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/21_cdl-study-guide_cheat_sheet.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">Cheat Sheet. Quick reference to ease your test anxiety.</span>
+        <span class="bonus-item-text">Cheat Sheet. Quick reference to ease test day anxiety</span>
         <span class="bonus-tag">Free</span>
       </a>
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/20_cdl-study-guide_54_practice_test.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">Practice Test Vol.1. Gain confidence through realistic test scenarios.</span>
+        <span class="bonus-item-text">Practice Test Vol.1. Gain confidence with real-world practice</span>
         <span class="bonus-tag">Free</span>
       </a>
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/19_cdl-study-guide_53_practice_test.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">Practice Test Vol.2. Further prepare yourself to eliminate uncertainty.</span>
+        <span class="bonus-item-text">Practice Test Vol.2. Further hone your skills and knowledge</span>
         <span class="bonus-tag">Free</span>
       </a>
       
       <a href="https://github.com/maayar/studybonuses/releases/download/pdfs/18_cdl-study-guide_10_flashcards.pdf" class="bonus-item" download>
         <div class="bonus-dot"></div>
-        <span class="bonus-item-text">10 Flashcards. Master key concepts and feel prepared.</span>
+        <span class="bonus-item-text">10 Flashcards. Memorize key concepts to reduce overwhelm</span>
         <span class="bonus-tag">Free</span>
       </a>
       
@@ -476,6 +476,8 @@
 
   <div class="right-col">
     <div class="book-card">
+      
+      <img src="../cover.png" alt="CDL study guide" />
       
     </div>
   </div>
